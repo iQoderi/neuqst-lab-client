@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+    <tr>
+        <td>#</td>
+        <td>作品ID</td>
+        <td>作品链接</td>
+        <td>获得票数</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="work in works track by $index">
+        <td>{{$index+1}}</td>
+        <td>{{work._id}}</td>
+        <td><a href={{work.works}} target="_blank">点击查看</a></td>
+        <td>{{work.votes}}</td>
+        <td ng-click="vote(work)"
+                style="cursor: pointer">投票</td>
+    </tr>
+    </tbody>
+</table>
+<button  style="float:right;width: 100px" type="button" class="btn btn-success btn-lg" ng-click="getWorks()">刷新</button>
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="labApp">
+<head>
+    <meta charset="UTF-8">
+    <title>数学与统计学院科创实验室</title>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css"/>
+    <script>
+        apiHost='http://10.17.1.162:3000';
+    </script>
+</head>
+<body ng-controller="mainCtrl">
+<div ui-view=""></div>
+<script src="./bower_components/angular/angular.min.js"></script>
+<script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="./bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="app.js"></script>
+<script src="./js/router.js"></script>
+<script src="./config/requestConfig.js"></script>
+
+<script src="components/navgationBar/navgationBar.directive.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div ng-show="countdown===0">
+    <h1>一等奖. Bootstrap heading</h1>
+    <h2>二等奖. Bootstrap heading</h2>
+    <h3>三等奖. Bootstrap heading</h3>
+    <h3>三等奖. Bootstrap heading</h3>
+    <h4>优秀奖. Bootstrap heading</h4>
+    <h4>优秀奖. Bootstrap heading</h4>
+    <h4>优秀奖. Bootstrap heading</h4>
+    <h4>优秀奖. Bootstrap heading</h4>
+    <h4>优秀奖. Bootstrap heading</h4>
+</div>
+<div ng-style='myStyle' class="daojishi" ng-show="countdown>0">
+    {{countdown}}
+</div>
+<button ng-click="getResult()"
+        type="button" class="btn btn-default btn-lg btn-block">获取获奖结果</button>

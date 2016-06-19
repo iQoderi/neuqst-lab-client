@@ -1,0 +1,32 @@
+<div class="page-header">
+    <h1>NEUQ.数学与统计学院<small>科创实验室</small></h1>
+</div>
+<div class="login">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+            <div class="col-sm-10">
+                <input
+                        ng-model="username"
+                        type="text"
+                        class="form-control" id="inputEmail3" placeholder="请输入用户名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-10">
+                <input
+                        ng-model="password"
+                        type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button
+                        ng-click="login()"
+                        type="button"
+                        class="btn btn-default">登陆</button>
+            </div>
+        </div>
+    </form>
+</div>
